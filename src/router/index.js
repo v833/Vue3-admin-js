@@ -4,7 +4,11 @@ import {
 } from "vue-router";
 
 const routes = [
-
+{
+  path: '/login',
+  name: 'Login',
+  component: () => import('@/views/account/Login.vue')
+}
 ];
 
 const router = createRouter({
@@ -12,4 +16,4 @@ const router = createRouter({
   routes,
 });
 
-export default router;
+export default router
